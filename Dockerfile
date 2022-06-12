@@ -9,7 +9,7 @@ ENV LANG=C.UTF-8 \
  TZ=Asia/Shanghai \ 
  WEBMIN_VERSION=1.941
 
-ADD webmin_1.994_all.deb /webmin_1.994_all.deb
+#ADD webmin_1.994_all.deb /webmin_1.994_all.deb
 
 RUN echo root:pass | chpasswd && \
  echo "Acquire::GzipIndexes \"false\"; Acquire::CompressionTypes::Order:: \"gz\";" >/etc/apt/apt.conf.d/docker-gzip-indexes && \
@@ -18,9 +18,10 @@ RUN echo root:pass | chpasswd && \
  apt update && \
  apt -y upgrade && \
  apt -y dist-upgrade && \
- apt -y install ntp ntpdate net-tools iputils-ping python2 && \
+ apt -y install ntp ntpdate net-tools iputils-ping wget python2 && \
  apt -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions unzip && \
  apt -y install libglib2.0-0 libglib2.0-data libicu70 libxml2 shared-mime-info xdg-user-dirs && \
+ wget -e "http_proxy=http://192.168.100.253:6004" http://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb && \
  dpkg --install webmin_1.994_all.deb && \
  apt -y install -f  && \
  apt -y autoclean && \
