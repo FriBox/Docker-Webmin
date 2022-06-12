@@ -39,3 +39,4 @@ VOLUME ["/etc/webmin"]
 
 #ENTRYPOINT ["echo"," <-- [ FriBox - Webmin Service ] --> "]
 CMD /usr/bin/touch /var/webmin/miniserv.log && /usr/sbin/service webmin restart && /usr/bin/tail -f /var/webmin/miniserv.log
+
