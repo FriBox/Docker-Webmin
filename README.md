@@ -3,7 +3,7 @@ dockerfile for webmin
 
 ## Building the image
 ```
-git clone https://github.com/chsliu/docker-webmin.git
+git clone [https://github.com/chsliu/docker-webmin.git](https://github.com/FriBox/Docker-Webmin.git)
 cd docker-webmin
 docker build -t fribox/webmin .
 ```
