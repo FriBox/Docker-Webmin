@@ -1,0 +1,4 @@
+docker images
+docker tag fribox/webmin:latest fribox/webmin:v1.00
+docker login
+docker push streamwang/webmin:v1.00
