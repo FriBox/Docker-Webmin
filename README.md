@@ -6,8 +6,8 @@ Web Page Url: https://www.webmin.com/download.html
 
 ## Building the image
 ```
-git clone https://github.com/chsliu/docker-webmin.git
-cd docker-webmin
+git clone https://github.com/FriBox/Docker-Webmin.git
+cd Docker-Webmin
 docker build -t fribox/webmin .
 ```
 
