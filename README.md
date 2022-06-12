@@ -1,6 +1,9 @@
 # docker-webmin
 dockerfile for webmin
 
+Download Webmin file: [https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb](https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb)
+https://www.webmin.com/download.html
+
 ## Building the image
 ```
 git clone [https://github.com/chsliu/docker-webmin.git](https://github.com/FriBox/Docker-Webmin.git)
