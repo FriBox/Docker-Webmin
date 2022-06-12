@@ -1,8 +1,10 @@
 # docker-webmin
 dockerfile for webmin
 
-Download Webmin file: [https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb](https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb)<br>
-Web Page Url: https://www.webmin.com/download.html
+Download Webmin file:<br>
+    [https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb](https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb)<br>
+Web Page Url:<br>
+    [https://www.webmin.com/download.html](https://www.webmin.com/download.html)<br>
 
 ## Building the image
 ```
