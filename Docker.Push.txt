@@ -4,7 +4,7 @@ docker images
 docker tag fribox/webmin:latest fribox/webmin:v1.00
 docker tag fribox/webmin:latest streamwang/webmin:v1.00
 #导出镜像保存
-docker save streamwang/webmin -o c:\FriBox.Docker-Webmin.tar
+docker save streamwang/webmin -o FriBox.Docker-Webmin.tar
 #登录Docker
 docker login
 #上传镜像
