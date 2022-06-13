@@ -1,9 +1,9 @@
 # docker-webmin
-dockerfile for webmin
+dockerfile for webmin （Webmin 的 Docker 镜像编译文件）
 
-Download Webmin file:<br>
+Download Webmin file（Webmin 官方包下载地址）:<br>
 　　[https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb](https://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb)<br>
-Web Page Url:<br>
+Web Page Url（Webmin 官方包下载页面）:<br>
 　　[https://www.webmin.com/download.html](https://www.webmin.com/download.html)<br>
 
 ## Building the image （编译镜像）
