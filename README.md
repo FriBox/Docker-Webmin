@@ -20,7 +20,7 @@ docker save fribox/webmin -o FriBox.Docker-Webmin.tar
 
 ## Running the container (启动容器)
 ```
-docker run -d -p 10000:10000 fribox/webmin
+docker run --name webmin -d --restart=always --publish 10000:10000/tcp fribox/webmin
 ```
 
 ## Log into webmin and manage your server （登录页面Webmin管理页面）
