@@ -6,11 +6,16 @@ Download Webmin file:<br>
 Web Page Url:<br>
 　　[https://www.webmin.com/download.html](https://www.webmin.com/download.html)<br>
 
-## Building the image
+## Building the image （编译镜像）
 ```
 git clone https://github.com/FriBox/Docker-Webmin.git
 cd Docker-Webmin
 docker build -t fribox/webmin .
+```
+
+## Export the image （导出镜像保存）
+```
+docker save fribox/webmin -o FriBox.Docker-Webmin.tar
 ```
 
 ## Running the container
