@@ -18,13 +18,13 @@ docker build -t fribox/webmin .
 docker save fribox/webmin -o FriBox.Docker-Webmin.tar
 ```
 
-## Running the container
+## Running the container (启动容器)
 ```
 docker run -d -p 10000:10000 fribox/webmin
 ```
 
-Log into webmin and manage your server
+Log into webmin and manage your server （登录页面）
 ```
 https://hostname.or.ip:10000
-(root:pass)
+(root:pass) 用户名和密码
 ```
