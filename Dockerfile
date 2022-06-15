@@ -21,7 +21,7 @@ RUN echo root:pass | chpasswd && \
  apt -y install ntp ntpdate net-tools iputils-ping wget python2 && \
  apt -y install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions unzip && \
  apt -y install libglib2.0-0 libglib2.0-data libicu70 libxml2 shared-mime-info xdg-user-dirs && \
- wget -e "http_proxy=http://192.168.100.253:6004" http://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb && \
+ wget http://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb && \
  dpkg --install webmin_1.994_all.deb && \
  apt -y install -f  && \
  apt -y autoclean && \
