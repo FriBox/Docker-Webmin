@@ -18,9 +18,14 @@ docker build -t fribox/webmin .
 docker save fribox/webmin -o FriBox.Docker-Webmin.tar
 ```
 
+## Import the image （手动导入镜像）
+```
+docker load -i FriBox.Docker-Webmin.tar
+```
+
 ## Running the container (启动容器)
 ```
-docker run --name webmin -d --restart=always --publish 10000:10000/tcp fribox/webmin
+docker run --name Webmin-Service -d --restart=always --env ROOT_PASSWORD="PassWord" --publish 10000:10000/tcp fribox/webmin
 ```
 
 ## Log into webmin and manage your server （登录页面Webmin管理页面）
