@@ -7,7 +7,7 @@ LABEL description="Webmin Service Docker image from FriBox customization."
 ARG DEBIAN_FRONTEND=noninteractive
 ENV LANG=C.UTF-8 \ 
  TZ=Asia/Shanghai \ 
- WEBMIN_VERSION=1.941
+ WEBMIN_VERSION=1.994
 
 #ADD webmin_1.994_all.deb /webmin_1.994_all.deb
 
