@@ -1,8 +1,8 @@
 #列出镜像
 docker images
 #将镜像命名TAG保存
-docker tag fribox/webmin:latest fribox/webmin:v1.00
-docker tag fribox/webmin:latest streamwang/webmin:v1.00
+docker tag fribox/webmin:latest fribox/webmin:v1.01
+docker tag fribox/webmin:latest streamwang/webmin:v1.01
 #导出镜像保存
 docker save streamwang/webmin -o FriBox.Docker-Webmin.tar
 #导入镜像
@@ -10,4 +10,8 @@ docker load -i FriBox.Docker-Webmin.tar
 #登录Docker
 docker login
 #上传镜像
-docker push streamwang/webmin:v1.00
+docker push streamwang/webmin:v1.01
+#启动容器
+docker run --name Webmin-Service -d --restart=always --env ROOT_PASSWORD="PassWord" --publish 10000:10000/tcp fribox/webmin
+#变量
+ROOT_PASSWORD变量为Root账户密码
