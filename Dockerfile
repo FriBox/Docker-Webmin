@@ -27,7 +27,7 @@ RUN echo root:pass | chpasswd && \
  dpkg-reconfigure locales && \
  locale-gen C.UTF-8 && \
  /usr/sbin/update-locale LANG=C.UTF-8 && \
- wget -e "http_proxy=http://192.168.100.253:6004" http://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb && \
+ wget http://prdownloads.sourceforge.net/webadmin/webmin_1.994_all.deb && \
  dpkg --install webmin_1.994_all.deb && \
  apt -y install -f  && \
  apt -y autoclean && \
